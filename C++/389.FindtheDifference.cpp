@@ -32,10 +32,7 @@ public:
 			}
 		}
 		for(int i = 0; i < t.size(); i ++){
-			if (count.find(t[i])!=count.end()){
-				if (count[t[i]] == 0){
-					return t[i];
-				}
+			if (count.find(t[i])!=count.end() && count[t[i]]){
 				count[t[i]] --;
 			}else{
 				return t[i];
